@@ -10,8 +10,7 @@ A comprehensive desktop and web application for portfolio risk analysis, stress 
 
 ```bash
 # Clone or download the project
-# Navigate to the project directory
-cd POF
+# Navigate to the project director
 
 # Install dependencies
 pip install -r requirements.txt
@@ -312,3 +311,4 @@ For technical support:
 - [ ] Portfolio optimization features
 - [ ] Backtesting capabilities
 - [ ] API integration for institutional data providers
+
