@@ -307,5 +307,6 @@ For technical support:
 - [ ] Backtesting capabilities
 - [ ] API integration for institutional data providers
 # Portfolio-Portfolio-Risk-Management-System-EquiRisk
-#   P o r t f o l i o - P o r t f o l i o - R i s k - M a n a g e m e n t - S y s t e m - E q u i R i s k  
+#   P o r t f o l i o - P o r t f o l i o - R i s k - M a n a g e m e n t - S y s t e m - E q u i R i s k 
+ 
  
