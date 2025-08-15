@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-Educational-green.svg)](#license)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#installation)
 
-A comprehensive desktop application for portfolio risk analysis, stress testing, and financial reporting built with Python and modern GUI frameworks (PyQt6/Streamlit). This professional-grade tool provides advanced risk metrics, Monte Carlo simulations, GARCH volatility modeling, and detailed reporting capabilities.
+A comprehensive desktop and web application for portfolio risk analysis, stress testing, and financial reporting built with Python and modern UI frameworks (PyQt5/Streamlit). This professional-grade tool provides advanced risk metrics, Monte Carlo simulations, GARCH volatility modeling, and detailed reporting capabilities.
 
 ## Quick Start
 
@@ -78,7 +78,8 @@ streamlit run streamlit_app.py
 1. **Download the Project**
    ```bash
    # Ensure you have these files in your project directory:
-   # - main.py (main application file)
+   # - modern_gui.py (desktop application)
+   # - streamlit_app.py (web interface)
    # - requirements.txt (dependencies)
    # - README.md (this file)
    # - portfolio_data.db (created automatically on first run)
@@ -108,6 +109,11 @@ streamlit run streamlit_app.py
    streamlit run streamlit_app.py
    ```
 
+   Note on desktop GUI: the current desktop app uses PyQt5. If your environment only has PyQt6 installed, install PyQt5 as well:
+   ```bash
+   pip install PyQt5
+   ```
+
 ## Dependencies
 
 | Package | Version | Purpose |
@@ -122,7 +128,7 @@ streamlit run streamlit_app.py
 | openpyxl | ≥3.1.0 | Excel file generation |
 | sqlalchemy | ≥2.0.0 | Database operations |
 | scikit-learn | ≥1.3.0 | Machine learning utilities |
-| PyQt6 | ≥6.6.0 | Modern desktop GUI framework |
+| PyQt5 | ≥5.15.0 | Desktop GUI framework used by `modern_gui.py` |
 | streamlit | ≥1.28.0 | Web interface framework |
 | plotly | ≥5.17.0 | Interactive visualizations |
 | dash | ≥2.14.0 | Web application framework |
@@ -212,7 +218,7 @@ CREATE TABLE portfolio_weights (
 ```
 
 ### Code Structure
-- **modern_gui.py**: PyQt6-based desktop application with advanced GUI
+- **modern_gui.py**: PyQt5-based desktop application with advanced GUI
 - **streamlit_app.py**: Web-based interface using Streamlit framework
 - **core/portfolio_manager.py**: Core portfolio management and risk calculations
 - **reports/modern_reports.py**: Advanced reporting with interactive visualizations
@@ -284,7 +290,7 @@ This project is provided as-is for educational and research purposes. Please ens
 ## Support
 
 For technical support:
-- Check the [troubleshooting section](#-troubleshooting)
+- Check the [troubleshooting section](#troubleshooting)
 - Review console output for detailed error messages
 - Ensure all dependencies are properly installed
 - Verify internet connectivity for data downloads
@@ -296,17 +302,13 @@ For technical support:
 - **v1.2**: Enhanced reporting and export capabilities
 - **v1.3**: Improved error handling and data validation
 - **v1.4**: Added comprehensive Excel reporting with methodology
-- **v2.0**: Major refactor with PyQt6 GUI, emoji-free interface, and modernized dependencies
+- **v2.0**: Major refactor with modernized dependencies and UI improvements
 
 ## Future Enhancements
 
-- [ ] Web-based interface using Streamlit/Dash
+- [ ] Enhance Streamlit interface; optional Dash support
 - [ ] Real-time data streaming
 - [ ] Additional risk models (Extreme Value Theory)
 - [ ] Portfolio optimization features
 - [ ] Backtesting capabilities
 - [ ] API integration for institutional data providers
-# Portfolio-Portfolio-Risk-Management-System-EquiRisk
-#   P o r t f o l i o - P o r t f o l i o - R i s k - M a n a g e m e n t - S y s t e m - E q u i R i s k 
- 
- 
